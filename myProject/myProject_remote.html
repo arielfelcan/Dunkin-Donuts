@@ -1,32 +1,284 @@
 <html>
-	<title>My Project (Remote)</title>
+	<title>Dunkin' Donuts (Remote)</title>
 	<head>
-		<script src="https://cdn.jsdelivr.net/gh/tuftsceeo/SPIKE-Web-Interface/cdn/ServiceDock.js" charset="utf-8"></script>
-	  <script src="../src/secret.js" charset="utf-8"></script>
-	  <script src="../src/cloud.js" charset="utf-8"></script>
-	  <link rel="stylesheet" href="../src/style.css" />
-	</head>
-<body>
+<script src="https://cdn.jsdelivr.net/gh/tuftsceeo/SPIKE-Web-Interface/cdn/ServiceDock.js" charset="utf-8"></script>
+    <script src="../src/secret.js" charset="utf-8"></script>
+    <script src="../src/cloud.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="../src/style.css" />
+	<h1 style="border:2px solid orange;">Dunkin' Donuts and Drama</h1>
+    <img src='https://solnicklawyers.com/wp-content/uploads/2015/09/dunkin-donuts-logo.jpg' style="float:left;width:250px;height:175px;">
+    <img src='http://www.drinkpreneur.com/wp-content/uploads/2016/08/drinkpreneur_dunkin-donuts.jpg' style="float:right;width:300px;height:175px;">
+    <img src='https://www.twincities.com/wp-content/uploads/2017/01/dunkin.jpg?w=700' style="float:right-down;width:300px;height:175px;">
+    
+    <style>
+        .btn1 {width:300px;
+        padding:30px 32px;
+        font-size: 60px;
+        text-align: center;
+        height: 250px;
+        border-radius: 50px;}
+
+         .btn2 {width:300px;
+        padding:30px 32px;
+        font-size: 60px;
+        text-align: center;
+        height: 250px;
+        border-radius: 50px;}
+
+         .btn3 {width:300px;
+        padding:30px 32px;
+        font-size: 60px;
+        text-align: center;
+        height: 250px;
+        border-radius: 50px;}
+
+         .btn4 {width:300px;
+        padding:30px 32px;
+        font-size: 60px;
+        text-align: center;
+        height: 250px;
+        border-radius: 50px;}
+
+         .btn5 {width:300px;
+        padding:30px 32px;
+        font-size: 60px;
+        text-align: center;
+        height: 250px;
+        border-radius: 50px;}
+
+         .btn6 {width:300px;
+        padding:30px 32px;
+        font-size: 60px;
+        text-align: center;
+        height: 250px;
+        border-radius: 50px;}
+
+         .btn7 {width:300px;
+        padding:30px 32px;
+        font-size: 60px;
+        text-align: center;
+        height: 250px;
+        border-radius: 50px;}
+
+         .btn8 {width:300px;
+        padding:30px 32px;
+        font-size: 60px;
+        text-align: center;
+        height: 250px;
+        border-radius: 50px;}
+
+         .btn9 {width:300px;
+        padding:30px 32px;
+        font-size: 60px;
+        text-align: center;
+        height: 250px;
+        border-radius: 50px;}
+
+         .btn10 {width:300px;
+        padding:30px 32px;
+        font-size: 60px;
+        text-align: center;
+        height: 250px;
+        border-radius: 50px;}
+
+        .btn11 {width:300px;
+        padding:30px 32px;
+        font-size: 100px;
+        font-family: 'Courier New', monospace;
+        text-align: center;
+        height: 250px;
+        border-radius: 50px;}
+    </style>
+    </head>
+	  
+	<p style = "font-size:30px">You are a cashier working at Dunkin' Donuts. A customer walks in.....</p>
+
+<body style="text-align:center; margin: 0px;">
 
 	<!-- SERVICE DOCK -->
 	<div id="servicedock">
-		<service-airtable id="service_airtable" tablename="myProject"></service-airtable>
+		<service-airtable id="service_airtable" tablename="ActionButtons"></service-airtable>
 	</div>
 
-  <h1>My Project (Remote Interface)</h1>
+    <div id = 'div1'>
+        <!--<button id="btn1" cloud_action='update' cloud_name='command' cloud_value = ''>Step 1<img src="https://www.tutorialspoint.com/latest/inter-process-communication.png " /></button> -->
+    <p>Player: "Hi, how are you?"</p>
+    <p>Customer: "Good, I ordered that sandwich on the counter there."</p>
+    <p>Player: "Oh, really?"</p>
+    <p style='font-size:60px'>Choose an option below to proceed:</p>
+  <button class='butn btn1' id="btn1" cloud_action='update' cloud_name='command' cloud_value = 'givesand' style="background-color:Orange;">Give Sandwich</button>
+  <button class='butn btn2' id="btn2" cloud_action='update' cloud_name='command' cloud_value = 'eatsand' style="background-color:Tomato;">Eat Sandwich</button>
+  <button class='butn btn3' id="btn3" cloud_action='update' cloud_name='command' cloud_value = 'throwsand' style="background-color:Violet;">Throw Sandwich</button>
+    </div>
 
-	<!-- CREATE YOUR PROJECT HERE -->
+    <div id = 'div2'>
+    <p>Player: Is there anything else I can do for you?</p>
+    <p>Customer: Can you pass me my coffee please?</p>
+    <p style='font-size:60px'>Choose an option below to proceed:</p>
+  <button class='butn btn4' id="btn4" cloud_action='update' cloud_name='command' cloud_value = 'givecof' style="background-color:Orange;">Give Coffee</button>
+  <button class='butn btn5' id="btn5" cloud_action='update' cloud_name='command' cloud_value = 'drinkcof' style="background-color:Tomato;">Drink Coffee</button>
+  <button class='butn btn6' id="btn6" cloud_action='update' cloud_name='command' cloud_value = 'throwcof' style="background-color:Violet;">Throw Coffee</button>
+    </div>
 
-	<hr>
+    <div id = 'div3'>
+    <p>Customer: Joke's on you, none of those were mine!</p>
+    <p>Player: That makes me SO ANGRY grrrrr!!!</p>
+    <p style='font-size:60px'>Choose an option below to proceed:</p>
+    <button class='butn btn7' id="btn7" cloud_action='update' cloud_name='command' cloud_value = 'throwfurn' style="background-color:Orange;">Throw Furniture</button>
+    <button class='butn btn8' id="btn8" cloud_action='update' cloud_name='command' cloud_value = 'run' style="background-color:Tomato;">Run</button>
+    <button class='butn btn9' id="btn9" cloud_action='update' cloud_name='command' cloud_value = 'distract' style="background-color:Violet;">Distract</button>
+        </div>
 
-	<h2>My Project Quick Links:</h2>
+    <div id = 'div4'>
+    <p>Player: Kindly, get out of my place of work! I am tired and want to go home.</p>
+    <p>Player: OK, I will. I am giving this Dunkin' a poor YELP review :(</p>
+    <p style='font-size:60px'>There's only one option left. The customer did not cooperate:</p>
+  <button class='butn btn10' id="btn10" cloud_action='update' cloud_name='command' cloud_value = 'chase' style="background-color:Orange;">Chase Customer</button>
+    </div>
+
+    <div id = 'div5'>
+    <p style='font-size:60px'>The story is done, the customer left and you (the cashier) quit! Reload the page to play again.</p>
+  <button class='butn btn11' id="btn10" cloud_action='update' cloud_name='command' cloud_value = 'done' style="background-color:Orange;">THE END</button>
+    </div>
+
+	<!-- <h2>My Project Quick Links:</h2>
   <p>
     <ul>
       <li><a href="./myProject_remote.html" target=_blank>My Project Remote Page</a></li>
       <li><a href="./myProject_local.html" target=_blank>My Project Local Page</a></li>
     </ul>
   </p>
-	<p><a href="../index.html">Return back to the main homepage.</a></p>
+	<p><a href="../index.html">Return back to the main homepage.</a></p> -->
 
 </body>
+<hr>
+<script lang="javascript">
+        function changeElementVisibility(elementID, makeVisible)
+{
+	if (makeVisible)
+	{
+		document.getElementById(elementID).style.display = "block";
+		document.getElementById(elementID).style.visibility = "visible"
+	}
+	else
+	{
+		document.getElementById(elementID).style.display = "none";
+		document.getElementById(elementID).style.visibility = "hidden"
+	}
+}
+	changeElementVisibility("div2",false)
+document.getElementById("btn1").addEventListener("click", function(){changeElementVisibility("div1",false);changeElementVisibility("div2",true);});
+
+changeElementVisibility("div2",false)
+document.getElementById("btn2").addEventListener("click", function(){changeElementVisibility("div1",false);changeElementVisibility("div2",true);});
+
+changeElementVisibility("div2",false)
+document.getElementById("btn3").addEventListener("click", function(){changeElementVisibility("div1",false);changeElementVisibility("div2",true);});
+
+changeElementVisibility("div3",false)
+document.getElementById("btn4").addEventListener("click", function(){changeElementVisibility("div2",false);changeElementVisibility("div3",true);});
+
+changeElementVisibility("div3",false)
+document.getElementById("btn5").addEventListener("click", function(){changeElementVisibility("div2",false);changeElementVisibility("div3",true);});
+
+changeElementVisibility("div3",false)
+document.getElementById("btn6").addEventListener("click", function(){changeElementVisibility("div2",false);changeElementVisibility("div3",true);});
+
+changeElementVisibility("div4",false)
+document.getElementById("btn7").addEventListener("click", function(){changeElementVisibility("div3",false);changeElementVisibility("div4",true);});
+
+changeElementVisibility("div4",false)
+document.getElementById("btn8").addEventListener("click", function(){changeElementVisibility("div3",false);changeElementVisibility("div4",true);});
+
+changeElementVisibility("div4",false)
+document.getElementById("btn9").addEventListener("click", function(){changeElementVisibility("div3",false);changeElementVisibility("div4",true);});
+
+changeElementVisibility("div5",false)
+document.getElementById("btn10").addEventListener("click", function(){changeElementVisibility("div4",false);changeElementVisibility("div5",true);});
+
+changeElementVisibility("div6",false)
+document.getElementById("btn11").addEventListener("click", function(){changeElementVisibility("div5",false);changeElementVisibility("div6",true);});
+
+    </script>
+</html>
+
+<!--ACCESSIBILITY FEATURES-->
+
+<html>
+	<head>
+		<title>Change Between Styles</title>
+		<script lang="javascript">
+			// change the style of the webpage
+			// Based on solution from:
+			// https://stackoverflow.com/questions/49194503/swapping-two-style-sheets-css-file-using-javascript
+			var tag_list = ['body', 'h1', 'p'];
+			var class_list = ['style1', 'style2', 'style3'];
+			function changeStyle (new_style) {
+				for (const tag of tag_list) {
+					tags = document.getElementsByTagName(tag);
+					for (i=0; i<tags.length; i++) {
+						// first remove all classes
+						for (const each_style of class_list) {
+							tags[i].classList.remove(each_style);
+						}
+						// now add in the new style class
+						tags[i].classList.add(new_style);
+					}
+				}
+			}
+
+            var current_zoom = 100;
+			function toggleZoomScreen(direction) {
+				if (direction == 0) { current_zoom = 100; }
+				else if (direction < 0) {
+					current_zoom = current_zoom - 10;
+					if (current_zoom < 10) { current_zoom = 10; }
+				}
+				else if (direction > 0) {
+					current_zoom = current_zoom + 10;
+				}
+				document.body.style.zoom = current_zoom + "%";
+			} 
+		</script>
+		<style>
+			body {
+				transition: background-color 1s;
+			}
+
+			/* style1 is "black on white" */
+			body.style1 {
+			  background-color: #FFFFFF;
+			  color: #000000;
+			}
+			
+			/* style2 is "white on black" */
+			body.style2 {
+			  background-color: #000000;
+			  color: #FFFFFF;
+			}
+			h1.style2 {
+				color: #0000FF;
+			}
+
+			/* style3 is "red on green" */
+			body.style3 {
+			  background-color: #00FF00;
+			  color: #FF0000;
+			}
+			p.style3 {
+				color: #0000FF;
+			}
+		</style>
+	</head>
+	<body>
+
+	  <button onclick="changeStyle('style1')" style='background-color: white; color:black':>Style 1</button>
+	  <button onclick="changeStyle('style2')"style='background-color: black; color:white'>Style 2</button>
+	  <button onclick="changeStyle('style3')"style='background-color: green; color:blue'>Style 3</button>
+
+       <button onclick="toggleZoomScreen(1)" style='background-color: white;'><img src="https://p.kindpng.com/picc/s/403-4037297_magnifying-glass-zoom-in-magnifying-glass-zoom-in.png" height='20px' width='20px'/></button>
+	  <button onclick="toggleZoomScreen(0)" style='background-color: white;'><img src="https://image.shutterstock.com/image-vector/update-icon-vector-reload-symbol-600w-1240027384.jpg" height='20px' width='20px'/></button>
+	  <button onclick="toggleZoomScreen(-1)" style='background-color: white;'><img src="https://pic.onlinewebfonts.com/svg/img_12104.png" height='20px' width='20px'/></button>
+
+	</body>
 </html>
